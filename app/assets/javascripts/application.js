@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require classie
+//= require modernizr.custom
+//= require sidebarEffects.js

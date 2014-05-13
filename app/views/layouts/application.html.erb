@@ -8,7 +8,7 @@
   <%= render 'layouts/shim' %>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Oswald|Raleway:200,300' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <script src="/assets/modernizr.custom.js"></script>
+    <%= javascript_include_tag "modernizr.custom" %>
 </head>
  <body>
     <%= render 'layouts/menu'   %>
@@ -19,8 +19,9 @@
         </div><!-- /st-content -->
       </div><!-- /st-pusher -->
     </div><!-- /st-container -->
-    <script src="/assets/classie.js"></script>
-    <script src="/assets/sidebarEffects.js"></script>
+    <%= javascript_include_tag "classie" %>
+    <%= javascript_include_tag "sidebarEffects"%>
+
   </body>
 
 </html>
