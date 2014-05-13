@@ -3,7 +3,7 @@
 <head>
   <title></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "/assets/classie", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "classie", "data-turbolinks-track" => true %>
 
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
@@ -19,8 +19,8 @@
         </div><!-- /st-content -->
       </div><!-- /st-pusher -->
     </div><!-- /st-container -->
-  <%= javascript_include_tag "/assets/modernizr.custom", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "/assets/sidebarEffects", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "modernizr.custom", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "sidebarEffects", "data-turbolinks-track" => true %>
   </body>
 
 </html>
