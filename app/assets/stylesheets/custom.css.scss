@@ -1,0 +1,121 @@
+//
+//HEADER CSS
+//
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em;
+}
+#archive{
+  display: block;
+  margin-top: -0.4em;
+  width: 8em;
+  text-align: center;
+  font-family: "Droid Sans";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: -1px;
+}
+#archContainer1{
+  display: inline;
+  float: left;
+  margin-left: 14%;
+}
+#archContainer2{
+  margin-right: 15%;
+  display: inline;
+  float: right;
+}
+$purple: #8353a4;
+.btn {
+  border: none;
+  margin-right: -0.3em;
+  margin-left: auto;
+  font-family: inherit;
+  font-size: inherit;
+  color: $purple;
+  background: none;
+  cursor: pointer;
+  padding: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  &:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+.icon-cart:before {
+  margin-top: -0.35em;
+  content: "\f02d";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+}
+.btn-5 {
+  background: $purple;
+  color: #fff;
+  height: 3em;
+  text-align: center;
+  width: 15em;
+  font-size: 1em;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  &:active {
+    background: #9053a9;
+    top: 2px;
+  }
+  & span{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  &:before{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  &:active:before{
+    color: $purple;
+  }
+}
+.btn-5a{
+  &:hover{
+    & span{
+     -webkit-transform: translateY(300%);
+      -moz-transform: translateY(300%);
+      -ms-transform: translateY(300%);
+      transform: translateY(300%);
+    }
+    &:before{
+      top: 0;
+    }
+  }
+  &:before{
+    left: 0;
+    top: -100%;
+  }
+}
+
