@@ -1,8 +1,10 @@
 Blog::Application.routes.draw do
   root 'static_pages#home'
-  get "static_pages/japan"
+  match '/travel',  to: 'static_pages#travel',  via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
-
+  match '/writing', to: 'static_pages#writing', via: 'get'
+  match '/science', to: 'static_pages#science', via: 'get'
+  match '/food',    to: 'static_pages#food',    via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

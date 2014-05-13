@@ -35,17 +35,18 @@ $purple: #8353a4;
   font-size: 1.4em;
   letter-spacing: -1px;
 }
+
 #archContainer1{
   display: inline;
   float: left;
-  width: 20em;
-  margin-left: 23%;
+  width: 250px;
+  margin-left: 27%;
 }
 #archContainer2{
   display: inline;
   float: right;
-  width: 20em;
-  margin-right: 23%;
+  width: 250px;
+  margin-right: 27%;
 }
 .btn {
   display: block;
@@ -335,7 +336,11 @@ body {
   speak: none;
   -webkit-font-smoothing: antialiased;
 }
+.icon a{
+  text-decoration: none;
+  color: white;
 
+}
 
 
 

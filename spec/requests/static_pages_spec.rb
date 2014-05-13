@@ -16,5 +16,21 @@ describe "Static pages" do
     it { should have_title(full_title('About'))}
   end
 
+  describe "Writing page" do
+    before(:each) {visit writing_path}
+    it { should have_content('Writing')}
+    it { should have_title (full_title('Writing'))}
+  end
 
+  describe "Science page" do
+    before(:each) {visit science_path}
+    it { should have_content('Science')}
+    it { should have_title(full_title('Science'))}
+  end
+
+  describe "Food page" do
+    before(:each) {visit food_path}
+    it {should have_content('Food')}
+    it{should have_title(full_title('Food'))}
+  end
 end
