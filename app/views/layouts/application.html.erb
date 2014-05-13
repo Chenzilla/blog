@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
 
 
   <%= csrf_meta_tags %>
   <%= render 'layouts/shim' %>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Oswald|Raleway:200,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway:200,300' rel='stylesheet' type='text/css'>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
  <body>
     <%= render 'layouts/menu'   %>
     <%= render 'layouts/header' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </div><!-- /main -->
           </div><!-- /st-content-inner -->
         </div><!-- /st-content -->
       </div><!-- /st-pusher -->
     </div><!-- /st-container -->
-      <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 
-<%= javascript_include_tag "classie"%>
-  <%= javascript_include_tag "modernizr.custom"%>
-  <%= javascript_include_tag "sidebarEffects"%>
   </body>
 
 </html>

@@ -4,4 +4,7 @@ class StaticPagesController < ApplicationController
 
   def japan
   end
+
+  def about
+  end
 end

@@ -2,7 +2,6 @@
 //HEADER CSS
 //
 $purple: #8353a4;
-
 #logo{
   display: block;
   margin-left: auto;
@@ -32,7 +31,6 @@ $purple: #8353a4;
 #archive{
   margin-top: -0.4em;
   text-align: center;
-  font-family: "Raleway";
   text-decoration: none;
   font-size: 1.4em;
   letter-spacing: -1px;
@@ -40,12 +38,14 @@ $purple: #8353a4;
 #archContainer1{
   display: inline;
   float: left;
-  margin-left: 14%;
+  width: 20em;
+  margin-left: 23%;
 }
 #archContainer2{
   display: inline;
   float: right;
-  margin-right: 14%;
+  width: 20em;
+  margin-right: 23%;
 }
 .btn {
   display: block;
@@ -58,6 +58,7 @@ $purple: #8353a4;
   cursor: pointer;
   padding: 1em;
   text-transform: uppercase;
+  font-family: "Raleway";
   letter-spacing: 1px;
   position: relative;
   -webkit-transition: all 0.3s;
