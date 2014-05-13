@@ -8,11 +8,19 @@
   <%= render 'layouts/shim' %>
   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Oswald:400,300' rel='stylesheet' type='text/css'></head>
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script src="/assets/modernizr.custom.js"></script>
 
  <body>
+    <%= render 'layouts/menu'   %>
     <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-    </div>
+    <%= yield %>
+  </div><!-- /main -->
+          </div><!-- /st-content-inner -->
+        </div><!-- /st-content -->
+      </div><!-- /st-pusher -->
+    </div><!-- /st-container -->
+    <script src="/assets/classie.js"></script>
+    <script src="/assets/sidebarEffects.js"></script>
   </body>
+
 </html>
