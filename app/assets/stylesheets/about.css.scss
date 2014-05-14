@@ -1,15 +1,6 @@
-#about{
-  $gray: #524b57;
+$gray: #524b57;
 
-  h1{
-    font-family: "Oswald";
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: 1px;
-    color: $gray;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
+#about{
   #profile{
     width: 20em;
     display: block;
@@ -21,19 +12,7 @@
     padding: 0.2em;
     margin-bottom: 4em;
   }
-  p{
-    width: 46%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    font-family: "Raleway";
-    font-weight: 700;
-    color: $gray;
-    margin-top: 2em;
-    font-size: 16.5px;
-    line-height: 1.5em;
-  }
+
   #last{
     text-align: center;
   }
