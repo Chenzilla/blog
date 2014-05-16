@@ -14,9 +14,15 @@ class StaticPagesController < ApplicationController
   def food
   end
 
+  def archive
+  end
+
   def about
   end
 
   def wr_14_5_15_genre_of_the_sentence
+  end
+
+  def sc_14_5_15_dracula_mice
   end
 end
