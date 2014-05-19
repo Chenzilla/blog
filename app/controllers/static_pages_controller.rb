@@ -20,9 +20,9 @@ class StaticPagesController < ApplicationController
   def about
   end
 
-  def wr_14_5_15_genre_of_the_sentence
+  def wr_14_5_18_genre_of_the_sentence
   end
 
-  def sc_14_5_15_dracula_mice
+  def sc_14_5_15_fresh_blood
   end
 end

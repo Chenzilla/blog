@@ -10,6 +10,19 @@ h1{
   margin-bottom: 2em;
 }
 
+.quotation{
+  text-align: left;
+  opacity: 0.6;
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articleDate{
+  text-align: center;
+  margin-top:-2em;
+  margin-bottom: 0em;
+}
 a{
   color: #9364b4;
 }
@@ -41,7 +54,7 @@ p{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: justify;
   font-family: "Raleway";
   font-weight: 700;
   color: $gray;
