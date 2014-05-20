@@ -150,3 +150,63 @@ p{
   -moz-transform: translateX(0px);
   transform: translateX(0px);
 }
+
+#buttonContainer{
+  float: right;
+    margin-left: -11em;
+
+  p{
+  color: $purple;
+  float: right;
+  font-family: "Oswald";
+  display: inline;
+  padding-right: 0.8em;
+  margin-top: -0.3em;
+  letter-spacing: 0.3px;
+  }
+}
+
+#error_explanation{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: -3em;
+  margin-bottom: 2em;
+  color: $purple;
+
+  div{
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 1.3em;
+    opacity: 1;
+  }
+  ul{
+    font-family: "Oswald";
+    text-align: left;
+    list-style: none;
+    margin-left: 42.3%;
+    opacity: 0.8;
+  }
+}
+
+label{
+  float: left;
+  margin-left: 43%;
+}
+#subscriber_email{
+  float: right;
+  margin-right: 42.5%;
+  margin-top: 0.4em;
+}
+
+#submit{
+  top: 2.3em;
+  left: 31em;
+}
+.alert{
+  font-family: "Oswald";
+  text-align: center;
+  margin-top: 4em;
+  font-size: 1.4em;
+  color: $gray;
+}

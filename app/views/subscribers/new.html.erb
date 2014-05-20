@@ -1,6 +1,8 @@
 <% provide(:title, 'Subscribe') %>
 <div id="formContainer">
-  <%= form_for(@subscriber) do |f| %>
+    <%= render 'shared/error_messages' %>
+
+  <%= form_for(@subscriber, :html => {:target=>"_self"}) do |f| %>
     <%= f.label :email %>
     <%= f.text_field :email %>
     <%= f.submit "Subscribe", id: "submit" %>
