@@ -1,0 +1,508 @@
+@charset "UTF-8";/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+#about #profile {
+  width: 20em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #524b57;
+  padding: 0.2em;
+  margin-bottom: 4em; }
+#about #last {
+  text-align: center; }
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40em; }
+
+#fall {
+  margin-top: 2em;
+  margin-left: 2em;
+  padding-right: 0.8em;
+  width: 6em;
+  height: 6em;
+  background: #8353a4;
+  color: white;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out; }
+
+#fall:hover {
+  opacity: 1.0;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+  cursor: pointer; }
+
+​
+#archive {
+  margin-top: -0.4em; }
+
+#archContainer1 {
+  display: inline;
+  float: left;
+  width: 13%;
+  margin-left: 27%; }
+
+#archContainer2 {
+  display: inline;
+  float: right;
+  width: 13%;
+  margin-right: 27%; }
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 7em;
+  border: none;
+  color: #8353a4;
+  background: none;
+  cursor: pointer;
+  padding: 1em;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s; }
+  .btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.icon-cart:before {
+  margin-top: -0.35em;
+  content: "\f02d";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal; }
+
+.btn-5 {
+  background: #8353a4;
+  color: #fff;
+  text-align: center;
+  font-size: 1em;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .btn-5:active {
+    background: #9053a9;
+    top: 2px; }
+  .btn-5 span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -webkit-backface-visibility: hidden;
+    -moz-transition: all 0.3s;
+    -moz-backface-visibility: hidden;
+    transition: all 0.3s;
+    backface-visibility: hidden; }
+  .btn-5:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 2.5;
+    font-size: 180%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s; }
+  .btn-5:active:before {
+    color: #8353a4; }
+
+.btn-5a:hover span {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  transform: translateY(300%); }
+.btn-5a:hover:before {
+  top: 0; }
+.btn-5a:before {
+  left: 0;
+  top: -100%; }
+
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+  height: 100%; }
+
+.st-content {
+  overflow-y: scroll;
+  background: white; }
+
+.st-container {
+  position: relative;
+  overflow: hidden; }
+
+.st-pusher {
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s; }
+
+.st-pusher::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s; }
+
+.st-menu-open .st-pusher::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.st-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 300px;
+  height: 100%;
+  background: #8353a4;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.st-menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+.st-menu-open .st-menu::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s; }
+
+/* content style */
+.st-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.st-menu h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald";
+  margin: 0;
+  padding: 1em;
+  color: white;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  font-size: 2em;
+  letter-spacing: 3px; }
+
+i {
+  float: right; }
+
+.st-menu ul li a {
+  font-family: "Raleway";
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 1em 1em 1em 1.2em;
+  outline: none;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+  color: #f3efe0;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-transition: background 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, box-shadow 0.3s; }
+
+.st-menu ul li:first-child a {
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.2); }
+
+.st-menu ul li a:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px transparent;
+  color: #fff; }
+
+/* Individual effects */
+/* Effect 13: Fall down */
+.st-effect-13.st-container {
+  -webkit-perspective: 1500px;
+  perspective: 1500px;
+  -webkit-perspective-origin: 0% 50%;
+  perspective-origin: 0% 50%; }
+
+.st-effect-13.st-menu-open .st-pusher {
+  -webkit-transform: translate3d(300px, 0, 0);
+  transform: translate3d(300px, 0, 0); }
+
+.st-effect-13.st-menu {
+  z-index: 1;
+  opacity: 1;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }
+
+.st-effect-13.st-menu-open .st-effect-13.st-menu {
+  visibility: visible;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-speed: 0.2s;
+  transition-speed: 0.2s; }
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .st-pusher,
+.no-js .st-pusher {
+  padding-left: 300px; }
+
+body {
+  background: #444; }
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " "; }
+
+.clearfix:after {
+  clear: both; }
+
+/* To Navigation Style */
+.codrops-icon:before {
+  margin: 0 4px;
+  text-transform: none;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased; }
+
+.icon a {
+  text-decoration: none;
+  color: white; }
+#footer {
+  margin-top: 5em; }
+  #footer p {
+    font-family: "Raleway";
+    font-size: 12px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-top: 0.4em;
+    margin-bottom: 2em; }
+
+#footerP {
+  margin-top: 3em;
+  margin-bottom: -3.5em;
+  text-align: center; }
+#formContainer {
+  text-align: center;
+  margin-top: 5em; }
+  #formContainer label {
+    position: relative;
+    font-family: "Oswald";
+    font-size: 1.5em;
+    top: 5px;
+    margin-right: 0.5em; }
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+input {
+  position: relative;
+  height: 2em;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  font-weight: 700; }
+
+#submit {
+  margin-top: 1em;
+  background: #8353a4;
+  font-family: "Raleway";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  height: 3em;
+  width: 8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 400; }
+
+#subscription {
+  margin-top: -6em;
+  margin-right: 2em;
+  float: right;
+  right: 2em;
+  background: #8353a4;
+  color: white;
+  height: 5em;
+  width: 5em;
+  padding-right: 0.7em;
+  opacity: 0.6;
+  transition: opacity 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out; }
+
+#subscription:hover {
+  opacity: 1.0;
+  transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -webkit-transition: opacity .3s ease-in-out;
+  cursor: pointer; }
+
+​
+h1 {
+  font-family: "Oswald";
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #524b57;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.quotation {
+  text-align: left;
+  opacity: 0.6;
+  width: 67%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.articleDate {
+  text-align: center;
+  margin-top: -2em;
+  margin-bottom: 0em; }
+
+a {
+  color: #9364b4; }
+
+.images {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2em; }
+
+.caption {
+  margin-top: 0em;
+  font-size: 14px;
+  opacity: 0.8; }
+
+#pageHead,
+.sectionHead {
+  font-family: "Oswald";
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #524b57;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+p {
+  width: 46%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  font-family: "Raleway";
+  font-weight: 700;
+  color: #524b57;
+  margin-top: 2em;
+  font-size: 16.5px;
+  line-height: 1.5em; }
+
+.date {
+  font-family: "Oswald";
+  font-weight: 200;
+  text-align: center;
+  color: #524b57;
+  font-size: 28px; }
+
+#firstYear {
+  margin-top: 1.5em; }
+
+.articleContainer {
+  text-align: center; }
+
+.articleLink {
+  color: #524b57;
+  display: block;
+  text-decoration: none;
+  font-size: 16.5px;
+  font-family: "Raleway";
+  font-weight: 700;
+  margin-bottom: 1em; }
+
+/* Effect: Brackets */
+.cl-effect-1 a::before,
+.cl-effect-1 a::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+  transition: transform 0.3s, opacity 0.2s; }
+
+.cl-effect-1 a::before {
+  margin-right: 10px;
+  font-family: "FontAwesome";
+  content: '\f0da';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px); }
+
+.cl-effect-1 a:hover::before,
+.cl-effect-1 a:hover::after,
+.cl-effect-1 a:focus::before,
+.cl-effect-1 a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  transform: translateX(0px); }

@@ -1,6 +1,10 @@
 Blog::Application.routes.draw do
 
 
+  get "subscribers/new"
+  get "subscriber/new"
+  resources :subscribers
+
   root 'static_pages#home'
   match '/travel',  to: 'static_pages#travel',  via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
@@ -8,6 +12,8 @@ Blog::Application.routes.draw do
   match '/science', to: 'static_pages#science', via: 'get'
   match '/food',    to: 'static_pages#food',    via: 'get'
   match '/archive', to: 'static_pages#archive', via: 'get'
+  match '/subscribe',  to: 'subscribers#new',            via: 'get'
+
 
   #WRITING
   match '/genre_of_the_sentence',to: 'static_pages#wr_14_5_18_genre_of_the_sentence', via: 'get'

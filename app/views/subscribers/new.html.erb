@@ -1,0 +1,8 @@
+<% provide(:title, 'Subscribe') %>
+<div id="formContainer">
+  <%= form_for(@subscriber) do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.submit "Subscribe", id: "submit" %>
+  <% end %>
+</div>

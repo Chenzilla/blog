@@ -1,0 +1,52 @@
+// Place all the styles related to the Subscribers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$purple: #8353a4;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#formContainer {
+  text-align: center;
+  margin-top: 5em;
+  label {
+    position: relative;
+    font-family: "Oswald";
+    font-size: 1.5em;
+    top: 5px;
+    margin-right: 0.5em;
+  }
+}
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  position: relative;
+  height: 2em;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+#submit {
+  margin-top: 1em;
+  background: $purple;
+  font-family: "Raleway";
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  height: 3em;
+  width: 8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 400;
+}
