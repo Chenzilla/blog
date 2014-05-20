@@ -27,14 +27,10 @@ $purple: #8353a4;
   -webkit-transition: opacity .3s ease-in-out;
   cursor: pointer;
 }​
+
+
 h1{
-  font-family: "Oswald";
-  font-weight: 200;
-  text-align: center;
-  letter-spacing: 1px;
-  color: $gray;
-  margin-top: 2em;
-  margin-bottom: 2em;
+
 }
 
 .quotation{
@@ -54,6 +50,15 @@ a{
   color: #9364b4;
 }
 
+h1{
+  font-family: "Oswald";
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $gray;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
 .images{
   display: block;
   margin-right: auto;
