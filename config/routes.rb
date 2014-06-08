@@ -18,7 +18,7 @@ Blog::Application.routes.draw do
   #WRITING
   match '/genre_of_the_sentence',to: 'static_pages#wr_14_5_18_genre_of_the_sentence', via: 'get'
   match '/fresh_blood',to: 'static_pages#sc_14_5_15_fresh_blood', via: 'get'
-
+  match '/casual_curios_taiwan', to: 'static_pages#tr_14_6_8_casual_curios_taiwan', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

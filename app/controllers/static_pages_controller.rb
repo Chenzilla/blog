@@ -25,4 +25,7 @@ class StaticPagesController < ApplicationController
 
   def sc_14_5_15_fresh_blood
   end
+
+  def tr_14_6_8_casual_curios_taiwan
+  end
 end
